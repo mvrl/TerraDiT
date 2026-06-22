@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+.python-version
+
+# Logs / experiment tracking
+wandb/
+*.log
+exps/
+output/
+samples/
+samples_*/
+orig_alpha_test/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Model weights & data (downloaded from Hugging Face, never committed)
+checkpoints/*
+!checkpoints/.gitkeep
+data/git10m/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+points.pack
+
+# Jupyter
+.ipynb_checkpoints/
+
+# local debugging scripts (reference REPA paths; not for release)
+dev/

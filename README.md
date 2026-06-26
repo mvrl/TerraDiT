@@ -1,10 +1,10 @@
 <div align="center">
 
-# GeoDiT (ECCV 2026)
+# TerraDiT (ECCV 2026)
 
-<sub>Official reimplementation of the **GeoDiT-α (alpha)**, **GeoDiT-Σ (Sigma)**, and **GeoDiT-Ω (Omega)** models, unifying two papers:</sub><br/>
-<sub>• **GeoDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis** — α + Σ</sub><br/>
-<sub>• **GeoDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive** — Ω</sub>
+<sub>Official reimplementation of the **TerraDiT-α (alpha)**, **TerraDiT-Σ (Sigma)**, and **TerraDiT-Ω (Omega)** models, unifying two papers:</sub><br/>
+<sub>• **TerraDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis** — α + Σ</sub><br/>
+<sub>• **TerraDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive** — Ω</sub>
 
 </div>
 
@@ -12,9 +12,9 @@
 
 | Model | Conditioning | Backbone | Paper |
 | --- | --- | --- | --- |
-| **GeoDiT-α** | text | SiT-XL/2 | GeoDiT |
-| **GeoDiT-Σ** | text + geolocation + point prompts | SiT-XL/2 | GeoDiT |
-| **GeoDiT-Ω** | text + geolocation + geospatial primitives | SiT-XL/2 · SiT-B/2 | GeoDiT-Ω |
+| **TerraDiT-α** | text | SiT-XL/2 | TerraDiT |
+| **TerraDiT-Σ** | text + geolocation + point prompts | SiT-XL/2 | TerraDiT |
+| **TerraDiT-Ω** | text + geolocation + geospatial primitives | SiT-XL/2 · SiT-B/2 | TerraDiT-Ω |
 
 </div>
 
@@ -27,7 +27,7 @@
 
 <div align="center">
 
-## GeoDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive (ECCV 2026)
+## TerraDiT-Ω: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive (ECCV 2026)
 
 <br/>
 
@@ -48,7 +48,7 @@
 
 </div>
 
-GeoDiT-Ω generalizes point-conditioned control to **any geospatial primitive** — points,
+TerraDiT-Ω generalizes point-conditioned control to **any geospatial primitive** — points,
 bounding boxes, polylines, and polygons — through **Geometry-Aware Local Attention (GALA)**.
 A single model accepts heterogeneous instance geometry plus a global caption and geolocation,
 giving precise per-instance spatial control over satellite image synthesis without dense maps.
@@ -59,7 +59,7 @@ giving precise per-instance spatial control over satellite image synthesis witho
 
 <div align="center">
 
-## GeoDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis
+## TerraDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis
 
 <br/>
 
@@ -82,10 +82,10 @@ giving precise per-instance spatial control over satellite image synthesis witho
 
 </div>
 
-GeoDiT generates satellite images conditioned on **point queries** — spatial points paired with
+TerraDiT generates satellite images conditioned on **point queries** — spatial points paired with
 textual descriptions — enabling precise, annotation-efficient control without dense maps. An
-adaptive local attention mechanism around these point queries (GeoDiT-Σ) yields fine-grained
-spatial guidance, while the text-only base (GeoDiT-α) provides the underlying T2I model.
+adaptive local attention mechanism around these point queries (TerraDiT-Σ) yields fine-grained
+spatial guidance, while the text-only base (TerraDiT-α) provides the underlying T2I model.
 
 ---
 
@@ -103,16 +103,16 @@ We are preparing the official release. The following will be published here shor
 If you find our work useful, please consider citing:
 
 ```bibtex
-@inproceedings{wei2026geoditomega,
-  title     = {GeoDiT-{\Omega}: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive},
+@inproceedings{wei2026terraditomega,
+  title     = {TerraDiT-{\Omega}: Unified Spatial Control for Satellite Image Synthesis with Any Geospatial Primitive},
   author    = {Wei, Brian and Sastry, Srikumar and Cher, Daniel and Xing, Eric and Jacobs, Nathan},
   booktitle = {European Conference on Computer Vision},
   year      = {2026}
 }
 ```
 ```bibtex
-@article{sastry2026geodit,
-  title   = {GeoDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis},
+@article{sastry2026terradit,
+  title   = {TerraDiT: Point-Conditioned Diffusion Transformer for Satellite Image Synthesis},
   author  = {Sastry, Srikumar and Cher, Daniel and Wei, Brian and Dhakal, Aayush and Khanal, Subash and Gupta, Dev and Jacobs, Nathan},
   journal = {arXiv:2603.02172},
   year    = {2026}

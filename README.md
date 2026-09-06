@@ -115,6 +115,10 @@ Hub. Without coordinates, or with `--no-range`, a zero embedding is used.
 | Derived data | [MVRL/TerraDiT-data](https://huggingface.co/datasets/MVRL/TerraDiT-data) | `data/git10m/` | `python scripts/download_data.py --data-root data/git10m [--family omega]` |
 | Imagery | [lcybuaa/Git-10M](https://huggingface.co/datasets/lcybuaa/Git-10M) @ `29f192b8` | `data/git10m/hf/` | `python -c "from terradit.hf import load_git10m; load_git10m('data/git10m/hf')"` |
 
+## Community integrations
+
+- [Native Diffusers implementation](https://huggingface.co/BiliSakura/TerraDiT-diffusers)
+
 All released weights are EMA, fp16 safetensors with a `config.json` beside them; every family
 shares one SiT backbone (`terradit/models/sit.py`) and one sampler (Euler, 100 steps, no
 classifier-free guidance). The derived data (tile ids + coordinates + `hf_idx`, OSM point
